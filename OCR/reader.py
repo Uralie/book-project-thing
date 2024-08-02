@@ -5,6 +5,10 @@ import cv2
 import os,argparse
 import pytesseract
 from PIL import Image
+from sys import platform
+
+if platform == "win32":
+    pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tesseract.exe'
  
 #We then Construct an Argument Parser
 ap=argparse.ArgumentParser()
