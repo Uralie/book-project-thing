@@ -40,6 +40,8 @@ os.remove(filename)
 print(text)
  
 # show the output images
+'''
 cv2.imshow("Image Input", images)
 cv2.imshow("Output In Grayscale", gray)
 cv2.waitKey(0)
+'''
