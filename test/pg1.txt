@@ -1,0 +1,50 @@
+1. Introduction
+
+Rhythmic behaviors such as locomotion, respiration, feeding, and, in some animals
+heartbeat are controlled by oscillatory neuronal netw orks
+
+(Marder and Calabrese, 1996)
+Furthe
+
+rmore, wave-like rhythmic behaviors are characterized by
+
+a temporal phase lag in
+the activation of muscle
+
+s. Classic examples of this type of behavior are the undulatory
+swimming movements of the lamprey, leech, and
+
+tadpole; and the beating ot crayfish
+swimmerets (Grillner, 1999; Brodfuehrer et al.,
+
+1995: Roberts et al., 1998 Mulloney et
+al., 1998). A number of experimental and mathematical studies have investigated the
+origin of phase lag in the nervous systems of these
+
+animals. For example, in the lamprey
+
+and the crayfish, the underlying neuronal network h
+
+as been represented mathematically as
+a chain of oscillators coupled in a nearest neighbor fashion (Kopell and Ermentrout
+1988; Cohen et al., 1992; Skinner et al., 1997). Ina biological system this
+
+mathematica
+conceptualization corresponds roughly to a ne
+
+uronal network in whic h local circurt
+called “segmental oscillators,” that are independently capable of oscillation are coupled t
+one another (Cohen et al., 1992
+
+). For example, the neuronal network that underlies t
+beating of the crayfish swimmerets can be viewed as
+
+a chain of coupled segmental
+
+oscillators because an isolated abdomina ganglion produces rhythmic motor output
+
+similar in period and form to that of the intact network (Ikeda and Wiersma, 1964
+Murchison et al., 1993) and because coordinated activity 1s the result of intersegme ntal
+
+coupling (Stein, 1971; Paul and Mulloney, 1986; Namba and Mulloney. 1999)
+
