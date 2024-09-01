@@ -1,0 +1,7 @@
+orcaStart = time.time()
+print("Starting orca")
+response = ollama.chat(model='orca-mini', messages=[{'role': 'user', 'content': 'summarize this: ' + text}])
+print(response['message']['content'])
+orcaEnd = time.time()
+orcaTime = orcaEnd-orcaStart
+print("orca: " + orcaTime)

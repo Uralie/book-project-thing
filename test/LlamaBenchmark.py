@@ -1,7 +1,7 @@
 import time
 import ollama
 
-f = open("page.txt", "r")
+f = open("c1.txt", "r")
 text = f.read()
 
 tinyllamaStart = time.time()
