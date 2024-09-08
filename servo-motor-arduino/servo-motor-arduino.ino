@@ -22,7 +22,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   button1State = digitalRead(button1Pin);
-
+  digitalWrite(motor1in1, LOW)
   if(button1State == HIGH && !button1Pressed){
     button1Pressed = true;
     servo1.write(0);
