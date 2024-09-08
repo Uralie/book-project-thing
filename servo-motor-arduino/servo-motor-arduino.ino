@@ -1,9 +1,10 @@
 #include <Servo.h>
 
-#define buttonP1in = 2
-#define servo1Pin = 9
-#define motor1in1 = 10
-#define motor1in2 = 11
+const int button1Pin = 2;
+const int servo1Pin = 9;
+const int motor1in1 = 10;
+const int motor1in2 = 11;
+int button1State = 0;
 
 void setup() {
   // put your setup code here, to run once:
@@ -13,6 +14,8 @@ void setup() {
   pinMode(button1Pin, INPUT);
   pinMode(motor1in1, OUTPUT);
   pinMode(motor1in2, OUTPUT);
+
+
 
   bool button1Pressed = false;
 }
