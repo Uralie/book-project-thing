@@ -4,20 +4,19 @@ const int button1Pin = 2;
 const int servo1Pin = 9;
 const int motor1in1 = 10;
 const int motor1in2 = 11;
+
+Servo servo1;
+
 int button1State = 0;
+bool button1Pressed = false;
 
 void setup() {
   // put your setup code here, to run once:
-  Servo servo1;
 
   servo1.attach(servo1Pin);  // attaches the servo on pin 9 to the servo object
   pinMode(button1Pin, INPUT);
   pinMode(motor1in1, OUTPUT);
   pinMode(motor1in2, OUTPUT);
-
-
-
-  bool button1Pressed = false;
 }
 
 void loop() {
@@ -25,7 +24,7 @@ void loop() {
   button1State = digitalRead(button1Pin);
 
   if(button1State == HIGH && !button1Pressed){
-    button1Pressed = true
+    button1Pressed = true;
     servo1.write(0);
     analogWrite(motor1in2, 50);
     delay(1000);
@@ -35,6 +34,6 @@ void loop() {
     servo1.write(0);
   }
   else if(button1State == LOW && button1Pressed){ //debounce
-    button1Pressed = false
+    button1Pressed = false;
   }
 }
