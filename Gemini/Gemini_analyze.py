@@ -3,7 +3,7 @@ import re
 import google.generativeai as genai
 
 # Load API key from json file
-api_key_path = r'C:\Users\Tyler\Documents\.CodingMinds\EthanBookCapture\Gemini\api_key.json'
+api_key_path = r'git@github.com:Uralie/book-project-thing.git\api_key.json'
 with open(api_key_path) as f:
     api_key = json.load(f)["api_key"]
 
@@ -72,7 +72,7 @@ def create_gemini_model(model_name):
 
 if __name__ == "__main__":
     # Use the correct path for the file on your local system
-    text_file_path = r'C:\Users\Tyler\Documents\.CodingMinds\EthanBookCapture\Gemini\extracted_text_from_images.txt'
+    text_file_path = r'git@github.com:Uralie/book-project-thing.git'
     text = load_text_from_file(text_file_path)
 
     # Print the loaded text for debugging
