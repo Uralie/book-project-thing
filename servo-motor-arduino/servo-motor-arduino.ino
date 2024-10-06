@@ -1,3 +1,24 @@
+#include <Servo.h>
+
+const int button1Pin = 2;
+const int servo1Pin = 9;
+const int motor1in1 = 10;
+const int motor1in2 = 11;
+
+Servo servo1;
+
+int button1State = 0;
+bool button1Pressed = false;
+
+void setup() {
+  // put your setup code here, to run once:
+
+  servo1.attach(servo1Pin);  // attaches the servo on pin 9 to the servo object
+  pinMode(button1Pin, INPUT);
+  pinMode(motor1in1, OUTPUT);
+  pinMode(motor1in2, OUTPUT);
+}
+
 void loop() {
   // put your main code here, to run repeatedly:
   button1State = digitalRead(button1Pin);
@@ -16,11 +37,4 @@ void loop() {
   else if(button1State == LOW && button1Pressed){ //debounce
     button1Pressed = false;
   }
-}
-
-}
-
-// Interrupt Service Routine (ISR) for handling button press
-void buttonPress() {
-  button1Pressed = true;
 }
