@@ -19,11 +19,14 @@ void loop() {
 
   //digitalWrite(motor1in1, LOW);
   analogWrite(motor1in2, 200);
-  delay(100);
+  delay(125);
   analogWrite(motor1in2, 0);
   delay(1000);
-  servo1.write(0);
-  delay(1000);
+  for (int i = 180; i > 0; i--){
+    servo1.write(i);
+    delay(20);
+  }
+  delay(100);
   servo1.write(180);
   delay(500);
 }
